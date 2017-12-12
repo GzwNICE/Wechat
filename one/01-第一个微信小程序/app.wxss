@@ -1,0 +1,90 @@
+/*封装1：添加   */
+page{
+  background-color: #f8f8f8;
+}
+.mt20{
+  margin-top: 20rpx;
+}
+.bgw{
+  background-color: #fff;
+}
+
+/*封装2： 专门做间隔的盒子类  设定高度，填充底色  */
+.divider {
+  height: 20rpx;
+  background-color: #f8f8f8;
+  box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, 0.1) inset;
+}
+
+
+/*封装3:右边框  */
+.bdr{
+  position: relative;
+}
+.bdr::after {
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*功能封装4  常用箭头  */
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow::after {
+  content: "";
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 3rpx solid #ccc;
+  border-right: 3rpx solid #ccc;
+  transform: rotate(45deg);
+  display: block;
+}
+
+
+/* 功能封装5   水平垂直居中 */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 功能封装6   水平垂直居中 */
+.cell {
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.cell-item {
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 20rpx;
+}
+
+/* 功能封装7   星际评分 */
+.shop-star{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  color: #e2e2e2;
+}
+.star-before{
+   color: #f19e38;
+   position: absolute;
+   left: 0;
+   top: 0;
+   overflow: hidden;
+}
+
+/* 功能封装8  标题超出部分显示省略号 */
+.ellipsis{
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

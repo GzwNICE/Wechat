@@ -1,0 +1,14 @@
+<view class='card'>
+  <text class='card-title'>索尼镜头</text>
+  <text class='card-date'>2017-12-10</text>
+  <image class='card-img' src="https://img1.360buyimg.com/da/jfs/t13867/11/1412752337/201722/560ed61/5a1fdc11N5e975e98.jpg" width="375" mode="aspectFill"></image>
+  <text class='card-desc'>8000万摄像头照出你的美！</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>
+<view class='card'>
+  <text class='card-title'>三只松鼠大礼包</text>
+  <text class='card-date'>2017-12-11</text>
+  <image class='card-img' src="https://m.360buyimg.com/mobilecms/s1125x549_jfs/t14776/179/342502886/126892/bc618b9e/5a2a317dN2c57e7b0.jpg!q70.jpg" width="375" mode="aspectFill"></image>
+  <text class='card-desc'>好吃不上火！</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>

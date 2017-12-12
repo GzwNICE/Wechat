@@ -1,0 +1,6 @@
+<view class='divider'></view>
+<view class='cell'>
+  <navigator class='cell-item arrow'>
+    <text>联系人</text>
+  </navigator>    
+</view>

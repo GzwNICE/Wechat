@@ -1,0 +1,28 @@
+<!--轮播图分区  -->
+<!-- <image mode="aspectFill" 图片完整缩放></image> -->
+<view class='slider'>
+  <swiper indicator-dots="{{ true}}" autoplay="true" interval="2500" duration="500" circular>
+    <swiper-item wx:for="{{ slidesList }}" wx:key="id">
+      <image src="{{ item.image }}" width="375" mode="aspectFill" lazy-load/>
+    </swiper-item>
+  </swiper>
+</view>
+<!--首页导航分区  -->
+<view class='wrap'>
+  <navigator class='item bdr' url='/pages/shopList/shopList?cat={{ item.id }}' wx:for="{{ navList }}" wx:key="id">
+    <image src='{{ item.icon }}'></image>
+    <text>{{ item.name }}</text>
+    <!-- <checkbox checked='{{true}}'></checkbox> -->
+  </navigator>
+</view>
+<!--间隔填充  -->
+<view class='divider'></view>
+<!-- 首页入口分区 -->
+<view class='index-enter'>
+  <navigator class='enter-item'>
+    <image src='/assets/images/link-01.png'></image>
+  </navigator>
+  <navigator class='enter-item'>
+    <image src='/assets/images/link-02.png'></image>
+  </navigator>
+</view>
